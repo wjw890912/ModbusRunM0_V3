@@ -1,0 +1,442 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Project:</h2>
+C:\Users\mister-wang\Desktop\co2+DHT11+8RELAY\ModbusRunM0\SDK\Modbus.uvproj
+Project File Date:  04/03/2018
+
+<h2>Output:</h2>
+Build target 'Modbus'
+compiling main.c...
+..\user\inc\realyctrl.h(65): warning:  #2775-D: white space is required between the macro name "CO2_1_8MODBUS" and its replacement text
+..\user\inc\realyctrl.h:   #define CO2_1_8MODBUS-RTU  
+..\user\inc\realyctrl.h:                        ^
+..\user\inc\realyctrl.h(79): warning:  #14-D: extra text after expected end of preprocessing directive
+..\user\inc\realyctrl.h:   #ifdef  CO2_1_8MODBUS-RTU
+..\user\inc\realyctrl.h:                        ^
+..\user\inc\BLUX_V30B.h(57): warning:  #1-D: last line of file ends without a newline
+..\user\inc\BLUX_V30B.h:   #endif
+..\user\inc\BLUX_V30B.h:         ^
+..\user\inc\FMC_DATA_FLASH.h(11): warning:  #1295-D: Deprecated declaration InitSlaveAddr - give arg types
+..\user\inc\FMC_DATA_FLASH.h:   uint8_t InitSlaveAddr();
+..\user\inc\FMC_DATA_FLASH.h:           ^
+..\user\inc\FMC_DATA_FLASH.h(13): warning:  #1295-D: Deprecated declaration SlaveAddrPoll - give arg types
+..\user\inc\FMC_DATA_FLASH.h:   void SlaveAddrPoll();
+..\user\inc\FMC_DATA_FLASH.h:        ^
+..\user\inc\main.h(66): warning:  #1-D: last line of file ends without a newline
+..\user\inc\main.h:   #endif
+..\user\inc\main.h:         ^
+..\user\inc\main.h: ..\user\src\main.c: 6 warnings, 0 errors
+compiling realyctrl.c...
+..\user\inc\realyctrl.h(65): warning:  #2775-D: white space is required between the macro name "CO2_1_8MODBUS" and its replacement text
+..\user\inc\realyctrl.h:   #define CO2_1_8MODBUS-RTU  
+..\user\inc\realyctrl.h:                        ^
+..\user\inc\realyctrl.h(79): warning:  #14-D: extra text after expected end of preprocessing directive
+..\user\inc\realyctrl.h:   #ifdef  CO2_1_8MODBUS-RTU
+..\user\inc\realyctrl.h:                        ^
+..\user\inc\main.h(66): warning:  #1-D: last line of file ends without a newline
+..\user\inc\main.h:   #endif
+..\user\inc\main.h:         ^
+..\user\src\realyctrl.c(13): warning:  #14-D: extra text after expected end of preprocessing directive
+..\user\src\realyctrl.c:   #ifdef  CO2_1_8MODBUS-RTU_RELAY
+..\user\src\realyctrl.c:                        ^
+..\user\src\realyctrl.c(242): warning:  #188-D: enumerated type mixed with another type
+..\user\src\realyctrl.c:                                    RealyCtrl(i,CLOSE);
+..\user\src\realyctrl.c:                                              ^
+..\user\src\realyctrl.c(248): warning:  #188-D: enumerated type mixed with another type
+..\user\src\realyctrl.c:                                         RealyCtrl(i,OPEN);
+..\user\src\realyctrl.c:                                                   ^
+..\user\src\realyctrl.c: ..\user\src\realyctrl.c: 6 warnings, 0 errors
+compiling Uart3th.c...
+..\user\inc\main.h(66): warning:  #1-D: last line of file ends without a newline
+..\user\inc\main.h:   #endif
+..\user\inc\main.h:         ^
+..\user\src\Uart3th.c(292): warning:  #68-D: integer conversion resulted in a change of sign
+..\user\src\Uart3th.c:   uint8_t CO2SentBuf4[9]={0xff,0x01,0x88,2000/256,2000%256,0x00,0x00,0x00,(0xff-(0x01+0x88+(2000/256)+(2000%256)))+1};
+..\user\src\Uart3th.c:                                                                           ^
+..\user\src\Uart3th.c(286): warning:  #177-D: variable "CO2SentBuf2" was declared but never referenced
+..\user\src\Uart3th.c:   uint8_t CO2SentBuf2[9]={0xff,0x01,0x79,0x00,0x00,0x00,0x00,0x00,0x86};//关闭零点校准
+..\user\src\Uart3th.c:           ^
+..\user\src\Uart3th.c(292): warning:  #177-D: variable "CO2SentBuf4" was declared but never referenced
+..\user\src\Uart3th.c:   uint8_t CO2SentBuf4[9]={0xff,0x01,0x88,2000/256,2000%256,0x00,0x00,0x00,(0xff-(0x01+0x88+(2000/256)+(2000%256)))+1};
+..\user\src\Uart3th.c:           ^
+..\user\src\Uart3th.c: ..\user\src\Uart3th.c: 4 warnings, 0 errors
+compiling BLUX_V30B.C...
+..\user\inc\main.h(66): warning:  #1-D: last line of file ends without a newline
+..\user\inc\main.h:   #endif
+..\user\inc\main.h:         ^
+..\user\inc\BLUX_V30B.h(57): warning:  #1-D: last line of file ends without a newline
+..\user\inc\BLUX_V30B.h:   #endif
+..\user\inc\BLUX_V30B.h:         ^
+..\user\src\BLUX_V30B.C(166): warning:  #111-D: statement is unreachable
+..\user\src\BLUX_V30B.C:       I2C_Open(I2C1, 100000);
+..\user\src\BLUX_V30B.C:       ^
+..\user\src\BLUX_V30B.C(224): warning:  #111-D: statement is unreachable
+..\user\src\BLUX_V30B.C:            g_u8EndFlag = 0;
+..\user\src\BLUX_V30B.C:            ^
+..\user\src\BLUX_V30B.C(277): warning:  #177-D: variable "j" was declared but never referenced
+..\user\src\BLUX_V30B.C:     uint16 i,j;                                
+..\user\src\BLUX_V30B.C:              ^
+..\user\src\BLUX_V30B.C: ..\user\src\BLUX_V30B.C: 5 warnings, 0 errors
+linking...
+Program Size: Code=9378 RO-data=1362 RW-data=336 ZI-data=1568  
+FromELF: creating hex file...
+".\obj\Modbus.axf" - 0 Error(s), 21 Warning(s).
+Build target 'Modbus'
+compiling main.c...
+..\user\inc\realyctrl.h(65): warning:  #2775-D: white space is required between the macro name "CO2_1_8MODBUS" and its replacement text
+..\user\inc\realyctrl.h:   #define CO2_1_8MODBUS-RTU  
+..\user\inc\realyctrl.h:                        ^
+..\user\inc\realyctrl.h(79): warning:  #14-D: extra text after expected end of preprocessing directive
+..\user\inc\realyctrl.h:   #ifdef  CO2_1_8MODBUS-RTU
+..\user\inc\realyctrl.h:                        ^
+..\user\inc\BLUX_V30B.h(57): warning:  #1-D: last line of file ends without a newline
+..\user\inc\BLUX_V30B.h:   #endif
+..\user\inc\BLUX_V30B.h:         ^
+..\user\inc\FMC_DATA_FLASH.h(11): warning:  #1295-D: Deprecated declaration InitSlaveAddr - give arg types
+..\user\inc\FMC_DATA_FLASH.h:   uint8_t InitSlaveAddr();
+..\user\inc\FMC_DATA_FLASH.h:           ^
+..\user\inc\FMC_DATA_FLASH.h(13): warning:  #1295-D: Deprecated declaration SlaveAddrPoll - give arg types
+..\user\inc\FMC_DATA_FLASH.h:   void SlaveAddrPoll();
+..\user\inc\FMC_DATA_FLASH.h:        ^
+..\user\inc\main.h(66): warning:  #1-D: last line of file ends without a newline
+..\user\inc\main.h:   #endif
+..\user\inc\main.h:         ^
+..\user\inc\main.h: ..\user\src\main.c: 6 warnings, 0 errors
+compiling realyctrl.c...
+..\user\inc\realyctrl.h(65): warning:  #2775-D: white space is required between the macro name "CO2_1_8MODBUS" and its replacement text
+..\user\inc\realyctrl.h:   #define CO2_1_8MODBUS-RTU  
+..\user\inc\realyctrl.h:                        ^
+..\user\inc\realyctrl.h(79): warning:  #14-D: extra text after expected end of preprocessing directive
+..\user\inc\realyctrl.h:   #ifdef  CO2_1_8MODBUS-RTU
+..\user\inc\realyctrl.h:                        ^
+..\user\inc\main.h(66): warning:  #1-D: last line of file ends without a newline
+..\user\inc\main.h:   #endif
+..\user\inc\main.h:         ^
+..\user\src\realyctrl.c(13): warning:  #14-D: extra text after expected end of preprocessing directive
+..\user\src\realyctrl.c:   #ifdef  CO2_1_8MODBUS-RTU_RELAY
+..\user\src\realyctrl.c:                        ^
+..\user\src\realyctrl.c(242): warning:  #188-D: enumerated type mixed with another type
+..\user\src\realyctrl.c:                                    RealyCtrl(i,CLOSE);
+..\user\src\realyctrl.c:                                              ^
+..\user\src\realyctrl.c(248): warning:  #188-D: enumerated type mixed with another type
+..\user\src\realyctrl.c:                                         RealyCtrl(i,OPEN);
+..\user\src\realyctrl.c:                                                   ^
+..\user\src\realyctrl.c: ..\user\src\realyctrl.c: 6 warnings, 0 errors
+compiling Uart3th.c...
+..\user\inc\main.h(66): warning:  #1-D: last line of file ends without a newline
+..\user\inc\main.h:   #endif
+..\user\inc\main.h:         ^
+..\user\src\Uart3th.c(292): warning:  #68-D: integer conversion resulted in a change of sign
+..\user\src\Uart3th.c:   uint8_t CO2SentBuf4[9]={0xff,0x01,0x88,2000/256,2000%256,0x00,0x00,0x00,(0xff-(0x01+0x88+(2000/256)+(2000%256)))+1};
+..\user\src\Uart3th.c:                                                                           ^
+..\user\src\Uart3th.c(286): warning:  #177-D: variable "CO2SentBuf2" was declared but never referenced
+..\user\src\Uart3th.c:   uint8_t CO2SentBuf2[9]={0xff,0x01,0x79,0x00,0x00,0x00,0x00,0x00,0x86};//关闭零点校准
+..\user\src\Uart3th.c:           ^
+..\user\src\Uart3th.c(292): warning:  #177-D: variable "CO2SentBuf4" was declared but never referenced
+..\user\src\Uart3th.c:   uint8_t CO2SentBuf4[9]={0xff,0x01,0x88,2000/256,2000%256,0x00,0x00,0x00,(0xff-(0x01+0x88+(2000/256)+(2000%256)))+1};
+..\user\src\Uart3th.c:           ^
+..\user\src\Uart3th.c: ..\user\src\Uart3th.c: 4 warnings, 0 errors
+compiling BLUX_V30B.C...
+..\user\inc\main.h(66): warning:  #1-D: last line of file ends without a newline
+..\user\inc\main.h:   #endif
+..\user\inc\main.h:         ^
+..\user\inc\BLUX_V30B.h(57): warning:  #1-D: last line of file ends without a newline
+..\user\inc\BLUX_V30B.h:   #endif
+..\user\inc\BLUX_V30B.h:         ^
+..\user\src\BLUX_V30B.C(166): warning:  #111-D: statement is unreachable
+..\user\src\BLUX_V30B.C:       I2C_Open(I2C1, 100000);
+..\user\src\BLUX_V30B.C:       ^
+..\user\src\BLUX_V30B.C(224): warning:  #111-D: statement is unreachable
+..\user\src\BLUX_V30B.C:            g_u8EndFlag = 0;
+..\user\src\BLUX_V30B.C:            ^
+..\user\src\BLUX_V30B.C(277): warning:  #177-D: variable "j" was declared but never referenced
+..\user\src\BLUX_V30B.C:     uint16 i,j;                                
+..\user\src\BLUX_V30B.C:              ^
+..\user\src\BLUX_V30B.C: ..\user\src\BLUX_V30B.C: 5 warnings, 0 errors
+linking...
+Program Size: Code=9378 RO-data=1362 RW-data=336 ZI-data=1568  
+FromELF: creating hex file...
+".\obj\Modbus.axf" - 0 Error(s), 21 Warning(s).
+Build target 'Modbus'
+compiling main.c...
+..\user\inc\realyctrl.h(65): warning:  #2775-D: white space is required between the macro name "CO2_1_8MODBUS" and its replacement text
+..\user\inc\realyctrl.h:   #define CO2_1_8MODBUS-RTU  
+..\user\inc\realyctrl.h:                        ^
+..\user\inc\realyctrl.h(79): warning:  #14-D: extra text after expected end of preprocessing directive
+..\user\inc\realyctrl.h:   #ifdef  CO2_1_8MODBUS-RTU
+..\user\inc\realyctrl.h:                        ^
+..\user\inc\BLUX_V30B.h(57): warning:  #1-D: last line of file ends without a newline
+..\user\inc\BLUX_V30B.h:   #endif
+..\user\inc\BLUX_V30B.h:         ^
+..\user\inc\FMC_DATA_FLASH.h(11): warning:  #1295-D: Deprecated declaration InitSlaveAddr - give arg types
+..\user\inc\FMC_DATA_FLASH.h:   uint8_t InitSlaveAddr();
+..\user\inc\FMC_DATA_FLASH.h:           ^
+..\user\inc\FMC_DATA_FLASH.h(13): warning:  #1295-D: Deprecated declaration SlaveAddrPoll - give arg types
+..\user\inc\FMC_DATA_FLASH.h:   void SlaveAddrPoll();
+..\user\inc\FMC_DATA_FLASH.h:        ^
+..\user\inc\main.h(66): warning:  #1-D: last line of file ends without a newline
+..\user\inc\main.h:   #endif
+..\user\inc\main.h:         ^
+..\user\inc\main.h: ..\user\src\main.c: 6 warnings, 0 errors
+compiling realyctrl.c...
+..\user\inc\realyctrl.h(65): warning:  #2775-D: white space is required between the macro name "CO2_1_8MODBUS" and its replacement text
+..\user\inc\realyctrl.h:   #define CO2_1_8MODBUS-RTU  
+..\user\inc\realyctrl.h:                        ^
+..\user\inc\realyctrl.h(79): warning:  #14-D: extra text after expected end of preprocessing directive
+..\user\inc\realyctrl.h:   #ifdef  CO2_1_8MODBUS-RTU
+..\user\inc\realyctrl.h:                        ^
+..\user\inc\main.h(66): warning:  #1-D: last line of file ends without a newline
+..\user\inc\main.h:   #endif
+..\user\inc\main.h:         ^
+..\user\src\realyctrl.c(13): warning:  #14-D: extra text after expected end of preprocessing directive
+..\user\src\realyctrl.c:   #ifdef  CO2_1_8MODBUS-RTU_RELAY
+..\user\src\realyctrl.c:                        ^
+..\user\src\realyctrl.c(242): warning:  #188-D: enumerated type mixed with another type
+..\user\src\realyctrl.c:                                    RealyCtrl(i,CLOSE);
+..\user\src\realyctrl.c:                                              ^
+..\user\src\realyctrl.c(248): warning:  #188-D: enumerated type mixed with another type
+..\user\src\realyctrl.c:                                         RealyCtrl(i,OPEN);
+..\user\src\realyctrl.c:                                                   ^
+..\user\src\realyctrl.c: ..\user\src\realyctrl.c: 6 warnings, 0 errors
+compiling Uart3th.c...
+..\user\inc\main.h(66): warning:  #1-D: last line of file ends without a newline
+..\user\inc\main.h:   #endif
+..\user\inc\main.h:         ^
+..\user\src\Uart3th.c(292): warning:  #68-D: integer conversion resulted in a change of sign
+..\user\src\Uart3th.c:   uint8_t CO2SentBuf4[9]={0xff,0x01,0x88,2000/256,2000%256,0x00,0x00,0x00,(0xff-(0x01+0x88+(2000/256)+(2000%256)))+1};
+..\user\src\Uart3th.c:                                                                           ^
+..\user\src\Uart3th.c(286): warning:  #177-D: variable "CO2SentBuf2" was declared but never referenced
+..\user\src\Uart3th.c:   uint8_t CO2SentBuf2[9]={0xff,0x01,0x79,0x00,0x00,0x00,0x00,0x00,0x86};//关闭零点校准
+..\user\src\Uart3th.c:           ^
+..\user\src\Uart3th.c(292): warning:  #177-D: variable "CO2SentBuf4" was declared but never referenced
+..\user\src\Uart3th.c:   uint8_t CO2SentBuf4[9]={0xff,0x01,0x88,2000/256,2000%256,0x00,0x00,0x00,(0xff-(0x01+0x88+(2000/256)+(2000%256)))+1};
+..\user\src\Uart3th.c:           ^
+..\user\src\Uart3th.c: ..\user\src\Uart3th.c: 4 warnings, 0 errors
+compiling BLUX_V30B.C...
+..\user\inc\main.h(66): warning:  #1-D: last line of file ends without a newline
+..\user\inc\main.h:   #endif
+..\user\inc\main.h:         ^
+..\user\inc\BLUX_V30B.h(57): warning:  #1-D: last line of file ends without a newline
+..\user\inc\BLUX_V30B.h:   #endif
+..\user\inc\BLUX_V30B.h:         ^
+..\user\src\BLUX_V30B.C(166): warning:  #111-D: statement is unreachable
+..\user\src\BLUX_V30B.C:       I2C_Open(I2C1, 100000);
+..\user\src\BLUX_V30B.C:       ^
+..\user\src\BLUX_V30B.C(224): warning:  #111-D: statement is unreachable
+..\user\src\BLUX_V30B.C:            g_u8EndFlag = 0;
+..\user\src\BLUX_V30B.C:            ^
+..\user\src\BLUX_V30B.C(277): warning:  #177-D: variable "j" was declared but never referenced
+..\user\src\BLUX_V30B.C:     uint16 i,j;                                
+..\user\src\BLUX_V30B.C:              ^
+..\user\src\BLUX_V30B.C: ..\user\src\BLUX_V30B.C: 5 warnings, 0 errors
+linking...
+Program Size: Code=9378 RO-data=1362 RW-data=336 ZI-data=1568  
+FromELF: creating hex file...
+".\obj\Modbus.axf" - 0 Error(s), 21 Warning(s).
+Load "C:\\Users\\mister-wang\\Desktop\\co2+DHT11+8RELAY\\ModbusRunM0\\SDK\\obj\\Modbus.AXF" 
+Load "C:\\Users\\mister-wang\\Desktop\\co2+DHT11+8RELAY\\ModbusRunM0\\SDK\\obj\\Modbus.AXF" 
+Erase Done.
+Programming Done.
+Application running...
+Load "C:\\Users\\mister-wang\\Desktop\\co2+DHT11+8RELAY\\ModbusRunM0\\SDK\\obj\\Modbus.AXF" 
+Erase Done.
+Programming Done.
+Application running...
+Load "C:\\Users\\mister-wang\\Desktop\\co2+DHT11+8RELAY\\ModbusRunM0\\SDK\\obj\\Modbus.AXF" 
+Erase Done.
+Programming Done.
+Application running...
+Load "C:\\Users\\mister-wang\\Desktop\\co2+DHT11+8RELAY\\ModbusRunM0\\SDK\\obj\\Modbus.AXF" 
+Load "C:\\Users\\mister-wang\\Desktop\\co2+DHT11+8RELAY\\ModbusRunM0\\SDK\\obj\\Modbus.AXF" 
+Erase Done.
+Programming Done.
+Application running...
+Load "C:\\Users\\mister-wang\\Desktop\\co2+DHT11+8RELAY\\ModbusRunM0\\SDK\\obj\\Modbus.AXF" 
+Erase Done.
+Programming Done.
+Application running...
+Load "C:\\Users\\mister-wang\\Desktop\\co2+DHT11+8RELAY\\ModbusRunM0\\SDK\\obj\\Modbus.AXF" 
+Erase Done.
+Programming Done.
+Verify OK.
+Application running...
+Load "C:\\Users\\mister-wang\\Desktop\\co2+DHT11+8RELAY\\ModbusRunM0\\SDK\\obj\\Modbus.AXF" 
+Erase Done.
+Programming Done.
+Load "C:\\Users\\mister-wang\\Desktop\\co2+DHT11+8RELAY\\ModbusRunM0\\SDK\\obj\\Modbus.AXF" 
+Erase Done.
+Programming Done.
+Load "C:\\Users\\mister-wang\\Desktop\\co2+DHT11+8RELAY\\ModbusRunM0\\SDK\\obj\\Modbus.AXF" 
+Erase Done.
+Programming Done.
+Load "C:\\Users\\mister-wang\\Desktop\\co2+DHT11+8RELAY\\ModbusRunM0\\SDK\\obj\\Modbus.AXF" 
+Erase Done.
+Programming Done.
+Verify OK.
+Application running...
+Load "C:\\Users\\mister-wang\\Desktop\\co2+DHT11+8RELAY\\ModbusRunM0\\SDK\\obj\\Modbus.AXF" 
+Erase Done.
+Programming Done.
+Verify OK.
+Application running...
+Load "C:\\Users\\mister-wang\\Desktop\\co2+DHT11+8RELAY\\ModbusRunM0\\SDK\\obj\\Modbus.AXF" 
+Load "C:\\Users\\mister-wang\\Desktop\\co2+DHT11+8RELAY\\ModbusRunM0\\SDK\\obj\\Modbus.AXF" 
+Load "C:\\Users\\mister-wang\\Desktop\\co2+DHT11+8RELAY\\ModbusRunM0\\SDK\\obj\\Modbus.AXF" 
+Erase Done.
+Programming Done.
+Verify OK.
+Application running...
+Build target 'Modbus'
+compiling main.c...
+..\user\inc\realyctrl.h(65): warning:  #2775-D: white space is required between the macro name "CO2_1_8MODBUS" and its replacement text
+..\user\inc\realyctrl.h:   #define CO2_1_8MODBUS-RTU  
+..\user\inc\realyctrl.h:                        ^
+..\user\inc\realyctrl.h(79): warning:  #14-D: extra text after expected end of preprocessing directive
+..\user\inc\realyctrl.h:   #ifdef  CO2_1_8MODBUS-RTU
+..\user\inc\realyctrl.h:                        ^
+..\user\inc\BLUX_V30B.h(57): warning:  #1-D: last line of file ends without a newline
+..\user\inc\BLUX_V30B.h:   #endif
+..\user\inc\BLUX_V30B.h:         ^
+..\user\inc\FMC_DATA_FLASH.h(11): warning:  #1295-D: Deprecated declaration InitSlaveAddr - give arg types
+..\user\inc\FMC_DATA_FLASH.h:   uint8_t InitSlaveAddr();
+..\user\inc\FMC_DATA_FLASH.h:           ^
+..\user\inc\FMC_DATA_FLASH.h(13): warning:  #1295-D: Deprecated declaration SlaveAddrPoll - give arg types
+..\user\inc\FMC_DATA_FLASH.h:   void SlaveAddrPoll();
+..\user\inc\FMC_DATA_FLASH.h:        ^
+..\user\inc\main.h(66): warning:  #1-D: last line of file ends without a newline
+..\user\inc\main.h:   #endif
+..\user\inc\main.h:         ^
+..\user\inc\main.h: ..\user\src\main.c: 6 warnings, 0 errors
+compiling realyctrl.c...
+..\user\inc\realyctrl.h(65): warning:  #2775-D: white space is required between the macro name "CO2_1_8MODBUS" and its replacement text
+..\user\inc\realyctrl.h:   #define CO2_1_8MODBUS-RTU  
+..\user\inc\realyctrl.h:                        ^
+..\user\inc\realyctrl.h(79): warning:  #14-D: extra text after expected end of preprocessing directive
+..\user\inc\realyctrl.h:   #ifdef  CO2_1_8MODBUS-RTU
+..\user\inc\realyctrl.h:                        ^
+..\user\inc\main.h(66): warning:  #1-D: last line of file ends without a newline
+..\user\inc\main.h:   #endif
+..\user\inc\main.h:         ^
+..\user\src\realyctrl.c(13): warning:  #14-D: extra text after expected end of preprocessing directive
+..\user\src\realyctrl.c:   #ifdef  CO2_1_8MODBUS-RTU_RELAY
+..\user\src\realyctrl.c:                        ^
+..\user\src\realyctrl.c(242): warning:  #188-D: enumerated type mixed with another type
+..\user\src\realyctrl.c:                                    RealyCtrl(i,CLOSE);
+..\user\src\realyctrl.c:                                              ^
+..\user\src\realyctrl.c(248): warning:  #188-D: enumerated type mixed with another type
+..\user\src\realyctrl.c:                                         RealyCtrl(i,OPEN);
+..\user\src\realyctrl.c:                                                   ^
+..\user\src\realyctrl.c: ..\user\src\realyctrl.c: 6 warnings, 0 errors
+compiling Uart3th.c...
+..\user\inc\main.h(66): warning:  #1-D: last line of file ends without a newline
+..\user\inc\main.h:   #endif
+..\user\inc\main.h:         ^
+..\user\src\Uart3th.c(292): warning:  #68-D: integer conversion resulted in a change of sign
+..\user\src\Uart3th.c:   uint8_t CO2SentBuf4[9]={0xff,0x01,0x88,2000/256,2000%256,0x00,0x00,0x00,(0xff-(0x01+0x88+(2000/256)+(2000%256)))+1};
+..\user\src\Uart3th.c:                                                                           ^
+..\user\src\Uart3th.c(286): warning:  #177-D: variable "CO2SentBuf2" was declared but never referenced
+..\user\src\Uart3th.c:   uint8_t CO2SentBuf2[9]={0xff,0x01,0x79,0x00,0x00,0x00,0x00,0x00,0x86};//关闭零点校准
+..\user\src\Uart3th.c:           ^
+..\user\src\Uart3th.c(292): warning:  #177-D: variable "CO2SentBuf4" was declared but never referenced
+..\user\src\Uart3th.c:   uint8_t CO2SentBuf4[9]={0xff,0x01,0x88,2000/256,2000%256,0x00,0x00,0x00,(0xff-(0x01+0x88+(2000/256)+(2000%256)))+1};
+..\user\src\Uart3th.c:           ^
+..\user\src\Uart3th.c: ..\user\src\Uart3th.c: 4 warnings, 0 errors
+compiling BLUX_V30B.C...
+..\user\inc\main.h(66): warning:  #1-D: last line of file ends without a newline
+..\user\inc\main.h:   #endif
+..\user\inc\main.h:         ^
+..\user\inc\BLUX_V30B.h(57): warning:  #1-D: last line of file ends without a newline
+..\user\inc\BLUX_V30B.h:   #endif
+..\user\inc\BLUX_V30B.h:         ^
+..\user\src\BLUX_V30B.C(166): warning:  #111-D: statement is unreachable
+..\user\src\BLUX_V30B.C:       I2C_Open(I2C1, 100000);
+..\user\src\BLUX_V30B.C:       ^
+..\user\src\BLUX_V30B.C(224): warning:  #111-D: statement is unreachable
+..\user\src\BLUX_V30B.C:            g_u8EndFlag = 0;
+..\user\src\BLUX_V30B.C:            ^
+..\user\src\BLUX_V30B.C(277): warning:  #177-D: variable "j" was declared but never referenced
+..\user\src\BLUX_V30B.C:     uint16 i,j;                                
+..\user\src\BLUX_V30B.C:              ^
+..\user\src\BLUX_V30B.C: ..\user\src\BLUX_V30B.C: 5 warnings, 0 errors
+linking...
+Program Size: Code=9378 RO-data=1362 RW-data=336 ZI-data=1568  
+FromELF: creating hex file...
+".\obj\Modbus.axf" - 0 Error(s), 21 Warning(s).
+Build target 'Modbus'
+compiling main.c...
+..\user\inc\realyctrl.h(65): warning:  #2775-D: white space is required between the macro name "CO2_1_8MODBUS" and its replacement text
+..\user\inc\realyctrl.h:   #define CO2_1_8MODBUS-RTU  
+..\user\inc\realyctrl.h:                        ^
+..\user\inc\realyctrl.h(79): warning:  #14-D: extra text after expected end of preprocessing directive
+..\user\inc\realyctrl.h:   #ifdef  CO2_1_8MODBUS-RTU
+..\user\inc\realyctrl.h:                        ^
+..\user\inc\BLUX_V30B.h(57): warning:  #1-D: last line of file ends without a newline
+..\user\inc\BLUX_V30B.h:   #endif
+..\user\inc\BLUX_V30B.h:         ^
+..\user\inc\FMC_DATA_FLASH.h(11): warning:  #1295-D: Deprecated declaration InitSlaveAddr - give arg types
+..\user\inc\FMC_DATA_FLASH.h:   uint8_t InitSlaveAddr();
+..\user\inc\FMC_DATA_FLASH.h:           ^
+..\user\inc\FMC_DATA_FLASH.h(13): warning:  #1295-D: Deprecated declaration SlaveAddrPoll - give arg types
+..\user\inc\FMC_DATA_FLASH.h:   void SlaveAddrPoll();
+..\user\inc\FMC_DATA_FLASH.h:        ^
+..\user\inc\main.h(66): warning:  #1-D: last line of file ends without a newline
+..\user\inc\main.h:   #endif
+..\user\inc\main.h:         ^
+..\user\inc\main.h: ..\user\src\main.c: 6 warnings, 0 errors
+compiling realyctrl.c...
+..\user\inc\realyctrl.h(65): warning:  #2775-D: white space is required between the macro name "CO2_1_8MODBUS" and its replacement text
+..\user\inc\realyctrl.h:   #define CO2_1_8MODBUS-RTU  
+..\user\inc\realyctrl.h:                        ^
+..\user\inc\realyctrl.h(79): warning:  #14-D: extra text after expected end of preprocessing directive
+..\user\inc\realyctrl.h:   #ifdef  CO2_1_8MODBUS-RTU
+..\user\inc\realyctrl.h:                        ^
+..\user\inc\main.h(66): warning:  #1-D: last line of file ends without a newline
+..\user\inc\main.h:   #endif
+..\user\inc\main.h:         ^
+..\user\src\realyctrl.c(13): warning:  #14-D: extra text after expected end of preprocessing directive
+..\user\src\realyctrl.c:   #ifdef  CO2_1_8MODBUS-RTU_RELAY
+..\user\src\realyctrl.c:                        ^
+..\user\src\realyctrl.c(242): warning:  #188-D: enumerated type mixed with another type
+..\user\src\realyctrl.c:                                    RealyCtrl(i,CLOSE);
+..\user\src\realyctrl.c:                                              ^
+..\user\src\realyctrl.c(248): warning:  #188-D: enumerated type mixed with another type
+..\user\src\realyctrl.c:                                         RealyCtrl(i,OPEN);
+..\user\src\realyctrl.c:                                                   ^
+..\user\src\realyctrl.c: ..\user\src\realyctrl.c: 6 warnings, 0 errors
+compiling Uart3th.c...
+..\user\inc\main.h(66): warning:  #1-D: last line of file ends without a newline
+..\user\inc\main.h:   #endif
+..\user\inc\main.h:         ^
+..\user\src\Uart3th.c(292): warning:  #68-D: integer conversion resulted in a change of sign
+..\user\src\Uart3th.c:   uint8_t CO2SentBuf4[9]={0xff,0x01,0x88,2000/256,2000%256,0x00,0x00,0x00,(0xff-(0x01+0x88+(2000/256)+(2000%256)))+1};
+..\user\src\Uart3th.c:                                                                           ^
+..\user\src\Uart3th.c(286): warning:  #177-D: variable "CO2SentBuf2" was declared but never referenced
+..\user\src\Uart3th.c:   uint8_t CO2SentBuf2[9]={0xff,0x01,0x79,0x00,0x00,0x00,0x00,0x00,0x86};//关闭零点校准
+..\user\src\Uart3th.c:           ^
+..\user\src\Uart3th.c(292): warning:  #177-D: variable "CO2SentBuf4" was declared but never referenced
+..\user\src\Uart3th.c:   uint8_t CO2SentBuf4[9]={0xff,0x01,0x88,2000/256,2000%256,0x00,0x00,0x00,(0xff-(0x01+0x88+(2000/256)+(2000%256)))+1};
+..\user\src\Uart3th.c:           ^
+..\user\src\Uart3th.c: ..\user\src\Uart3th.c: 4 warnings, 0 errors
+compiling BLUX_V30B.C...
+..\user\inc\main.h(66): warning:  #1-D: last line of file ends without a newline
+..\user\inc\main.h:   #endif
+..\user\inc\main.h:         ^
+..\user\inc\BLUX_V30B.h(57): warning:  #1-D: last line of file ends without a newline
+..\user\inc\BLUX_V30B.h:   #endif
+..\user\inc\BLUX_V30B.h:         ^
+..\user\src\BLUX_V30B.C(166): warning:  #111-D: statement is unreachable
+..\user\src\BLUX_V30B.C:       I2C_Open(I2C1, 100000);
+..\user\src\BLUX_V30B.C:       ^
+..\user\src\BLUX_V30B.C(224): warning:  #111-D: statement is unreachable
+..\user\src\BLUX_V30B.C:            g_u8EndFlag = 0;
+..\user\src\BLUX_V30B.C:            ^
+..\user\src\BLUX_V30B.C(277): warning:  #177-D: variable "j" was declared but never referenced
+..\user\src\BLUX_V30B.C:     uint16 i,j;                                
+..\user\src\BLUX_V30B.C:              ^
+..\user\src\BLUX_V30B.C: ..\user\src\BLUX_V30B.C: 5 warnings, 0 errors
+linking...
+Program Size: Code=9378 RO-data=1362 RW-data=336 ZI-data=1568  
+FromELF: creating hex file...
+".\obj\Modbus.axf" - 0 Error(s), 21 Warning(s).
